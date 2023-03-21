@@ -1,0 +1,14 @@
+body{
+    background:url(https://i.pinimg.com/originals/13/2c/01/132c0117782c8532eabd63d6a30fc82b.gif) ;
+    background-repeat: no-repeat;
+    background-size: 100% 99.99%;
+    color: rgb(0, 98, 255);
+}
+hr{
+    border-top: dashed royalblue 6px;
+}
+#cosas{
+    font-size: 30px;
+    font-family: 'Monoton', cursive;
+
+}

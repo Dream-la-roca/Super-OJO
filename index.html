@@ -1,0 +1,45 @@
+ 
+<html>
+  <head>
+    <title>Reconocimiento de imagen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="icons8-minecraft-pig-100.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h3 class="btn btn-default">Reconocer imágenes</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">El modelo está entrenado para identificar los siguientes objetos: </p>
+      <div id="cosas"><hr> vaso <hr>zapato de futbol <hr> mano <hr> Alonso <hr> nada <hr> libro <hr> engrapadora <hr></div>
+      <label>Vista de la cámara: </label>
+      <br>
+      <div id="camara" class="col-lg-6 col-md-6 col-sm-6"></div>
+      <div id="captura" class="col-lg-6 col-md-6 col-sm-6"></div>
+      <br><br>
+      <button class="btn btn-info" onclick="tomarFoto()">Tomar Foto</button>
+      <br><br>
+      <button class="btn btn-primary" onclick="reconocerObjeto()">Reconocer Objeto</button>
+      <br><br>
+
+      <p style="font-size: 22px;" id="objeto">Objeto:  </p>
+      <p style="font-size: 22px;" id="probabilidad">Precisión:  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
